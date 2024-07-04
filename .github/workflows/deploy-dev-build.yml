@@ -1,0 +1,34 @@
+name: Build & Deploy playground
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+        with:
+          ref: main
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build code
+        run: npm run dev:build
+
+      - name: Install SSH Key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_KEY }}
+          known_hosts: unnecessary
+
+      - name: Adding Known Hosts
+        run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Deploy build with rsync
+        run: rsync -avz ./playground/.output/ ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/var/www/nuxt-compose-icons.arthurplazanet.com/
