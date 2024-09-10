@@ -1,19 +1,12 @@
-export { svgLoader } from './svg-vue-loader';
+export { pascalCaseToKebabCase, toKebabCase, toPascalCase } from './convert-cases';
 
-export { pascalCaseToKebabCase, toKebabCase, toPascalCase };
+// Component functions
+export { createComponentFromName } from './components/create-component-from-name';
 
-function pascalCaseToKebabCase(str: string): string {
-  return str.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase();
-}
+// Filesystem functions
+export { readDirectoryRecursively } from './filesystem/read-directory-recursively';
+export { writeComponentFile } from './filesystem/write-component-file';
 
-function toKebabCase(str: string): string {
-  return str.replace(/-([a-z0-9])/g, (_, match) => match.toUpperCase());
-}
-
-function toPascalCase(str: string): string {
-  return str.replace(/(^\w|-\w)/g, clearAndUpper);
-}
-
-function clearAndUpper(str: string): string {
-  return str.replace(/-/, '').toUpperCase();
-}
+// SVG functions
+export { createSvgComponentCode } from './svg/create-svg-component.js';
+export { parseSvg } from './svg/parse-svg';

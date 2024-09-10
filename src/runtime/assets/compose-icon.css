@@ -1,0 +1,27 @@
+.compose-icon {
+  width: var(--icon-size);
+  height: var(--icon-size);
+}
+
+.compose-icon path,
+.compose-icon rect,
+.compose-icon circle,
+.compose-icon ellipse {
+  stroke: var(--icon-stroke);
+}
+
+.compose-icon.size-s {
+  --icon-size: var(--icon-size-s);
+}
+
+.compose-icon.size-m {
+  --icon-size: var(--icon-size-m);
+}
+
+.compose-icon.size-l {
+  --icon-size: var(--icon-size-l);
+}
+
+.compose-icon.size-xl {
+  --icon-size: var(--icon-size-xl);
+}
