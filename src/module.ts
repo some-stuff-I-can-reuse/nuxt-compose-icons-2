@@ -86,7 +86,7 @@ export default defineNuxtModule<ModuleOptions>({
 
           // Push the CSS file into the Nuxt app's CSS array
           nuxt.options.css.push(cssFilePath);
-          // nuxt.options.css.push(resolve('./runtime/assets/compose-icon.css'));
+          nuxt.options.css.push(path.resolve(__dirname, './runtime/assets/compose-icon.css'));
         });
       } else {
         console.error(`Folder does not exist: ${absolutePathToIcons}`);
