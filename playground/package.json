@@ -8,7 +8,13 @@
     "generate": "nuxi generate"
   },
   "dependencies": {
+    "@nuxt/kit": "^3.12.4",
+    "babel-plugin-prismjs": "^2.1.0",
+    "node-html-parser": "^6.1.13",
     "nuxt": "^3.12.2",
-    "nuxt-compose-icons": "file:../nuxt-compose-icons-1.0.0.tgz"
+    "prismjs": "1.28.0"
+  },
+  "devDependencies": {
+    "prettier-plugin-organize-imports": "^4.0.0"
   }
 }

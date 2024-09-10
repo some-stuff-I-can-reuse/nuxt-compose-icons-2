@@ -1,17 +1,12 @@
-import {
-  defineNuxtModule,
-  addPlugin,
-  createResolver,
-  findPath,
-  resolvePath,
-  addComponent,
-} from '@nuxt/kit';
+import { addComponent, defineNuxtModule } from '@nuxt/kit';
 import type { Component, ComponentsOptions } from '@nuxt/schema';
-import path, { resolve } from 'path';
 import fs from 'fs';
+import path, { resolve } from 'path';
 // import { type AsyncComponent } from "vue";
-import { pascalCaseToKebabCase, toKebabCase, toPascalCase } from './utils';
+import { toPascalCase } from './utils';
 import { createComponentFromName } from './utils/create-component-from-name';
+import { createSvgComponentCode } from './utils/create-svg-component';
+import { writeComponentFile } from './utils/write-component-file';
 
 // Module options TypeScript interface definition
 export interface ModuleOptions {
@@ -47,6 +42,7 @@ export default defineNuxtModule<ModuleOptions>({
       if (fs.existsSync(absolutePathToIcons) && fs.statSync(absolutePathToIcons).isDirectory()) {
         // Read the files in the folder
         const files = fs.readdirSync(absolutePathToIcons);
+        console.log('🖇️ ~ setup ~ files → ', files);
 
         // let fileInfo;
         // Your logic for each file
@@ -59,10 +55,19 @@ export default defineNuxtModule<ModuleOptions>({
 
           // Access the file name and extension using fileInfo.name and fileInfo.ext
 
-          const fileContent = fs.readFileSync(filePath, 'utf-8');
+          const svgContent = fs.readFileSync(filePath, 'utf-8');
+          // const transformedContent = svgLoader(svgContent);
+          const componentName = toPascalCase(fileInfo.name);
 
-          // We create the component from the utility function
-          const component = createComponentFromName(fileInfo.name, opts);
+          const componentCode = createSvgComponentCode(componentName, svgContent);
+
+          const generatedFilePath = writeComponentFile(componentName, componentCode);
+
+          const component = createComponentFromName(fileInfo.name, {
+            ...options.opts,
+            shortPath: generatedFilePath,
+            filePath: generatedFilePath,
+          });
 
           nuxt.hook('components:extend', (components) => {
             const existingComponent = components.find((c) => {
@@ -96,46 +101,15 @@ export default defineNuxtModule<ModuleOptions>({
             }
           });
         });
-        const newComponent = createComponentFromName('TestOnVaVoir', {
-          pascalName: toPascalCase('TestOnVaVoir'),
-          filePath: resolve('src/runtime/components/CardComponent.vue'),
-          meta: {
-            name: 'TestOnVaVoir',
-            yolo: 'swag',
-            marche: 'bien',
-          },
-        });
-
-        nuxt.hook('components:extend', function (components: Component[]) {
-          const existingComponent = components.find((c) => {
-            return (
-              (c.pascalName === newComponent.pascalName ||
-                c.kebabName === newComponent.kebabName) &&
-              c.mode === newComponent.mode
-            );
-          });
-          if (existingComponent) {
-            const existingPriority = existingComponent.priority ?? 0;
-            const newPriority = newComponent.priority ?? 0;
-
-            if (newPriority < existingPriority) {
-              return;
-            }
-
-            // We override where new component priority is equal or higher
-            // but we warn if they are equal.
-            if (newPriority === existingPriority) {
-              const name = existingComponent.pascalName || existingComponent.kebabName;
-              console.warn(
-                `Overriding ${name} component. You can specify a \`priority\` option when calling \`addComponent\` to avoid this warning.`,
-              );
-            }
-            Object.assign(existingComponent, newComponent);
-          } else {
-            // console.log('component push', component);
-            components.push(newComponent);
-          }
-        });
+        // const newComponent = createComponentFromName('TestOnVaVoir', {
+        //   pascalName: toPascalCase('TestOnVaVoir'),
+        //   filePath: resolve('src/runtime/components/CardComponent.vue'),
+        //   meta: {
+        //     name: 'TestOnVaVoir',
+        //     yolo: 'swag',
+        //     marche: 'bien',
+        //   },
+        // });
       } else {
         console.error(`Folder does not exist: ${absolutePathToIcons}`);
       }

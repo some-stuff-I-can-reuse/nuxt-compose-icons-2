@@ -1,0 +1,25 @@
+<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Keyboard Arrow Return 1" clip-path="url(#clip0_4735_24873)">
+<path
+      id="Vector"
+      d="M5.53418 23.3315L1.03418 18.8315L5.53418 14.3315"
+      stroke="#6D6E8F"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+<path
+      id="Vector_2"
+      d="M1.03418 18.8315H19.0342C20.2277 18.8315 21.3722 18.3574 22.2162 17.5135C23.0601 16.6695 23.5342 15.525 23.5342 14.3315V5.33148C23.5342 4.13801 23.0601 2.99341 22.2162 2.1495C21.3722 1.30559 20.2277 0.831482 19.0342 0.831482H10.7842"
+      stroke="#6D6E8F"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+</g>
+<defs>
+<clipPath id="clip0_4735_24873">
+<rect width="24" height="24" fill="white" transform="translate(0.28418 0.0844727)" />
+</clipPath>
+</defs>
+</svg>

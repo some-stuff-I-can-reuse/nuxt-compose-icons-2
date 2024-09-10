@@ -1,0 +1,12 @@
+<template>
+  <section>
+    <!-- add-note.svg -->
+    <AddNoteIcon size="2rem" color="var(--primary)" />
+
+    <!-- time.svg -->
+    <TimeIcon size="xl" color="#36365F" />
+
+    <!-- slide-right.svg -->
+    <SlideRightIcon size="2rem" color="var(--primary)" />
+  </section>
+</template>

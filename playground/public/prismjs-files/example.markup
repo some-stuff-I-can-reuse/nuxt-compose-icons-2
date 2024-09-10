@@ -1,0 +1,5 @@
+<template>
+  <section>
+    <AddIcon size="2rem" color="var(--primary)" />
+  </section>
+</template>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" fill="none" viewBox="0 0 26 24">
+  <path
+    stroke="#6D6E8F"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="1.5"
+    d="M11.902 20.352v1.837c0 .144.04.286.114.408a.74.74 0 0 0 .306.28.701.701 0 0 0 .776-.104l2.915-2.535a.755.755 0 0 0 .194-.262.787.787 0 0 0 .069-.322v-7.48c2.338-.497 4.457-1.779 6.032-3.65a11.673 11.673 0 0 0 2.69-6.713.792.792 0 0 0-.195-.57.73.73 0 0 0-.531-.241H3.91a.703.703 0 0 0-.532.241.767.767 0 0 0-.194.57c.043.634.137 1.26.28 1.872"
+  />
+  <ellipse
+    cx="6.932"
+    cy="12.881"
+    stroke="#6D6E8F"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="1.5"
+    rx="5.932"
+    ry="6.19"
+  />
+  <path
+    stroke="#6D6E8F"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="1.5"
+    d="M4.273 12.953h5.454M7 10.107v5.691"
+  />
+</svg>
