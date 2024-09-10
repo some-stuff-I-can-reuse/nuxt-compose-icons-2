@@ -67,7 +67,7 @@ export default defineNuxtModule<ModuleOptions>({
 
           const cssContent = generateCssFile(options.iconSizes);
           // Define the path to save the CSS file within the module
-          const cssFilePath = resolve(nuxt.options.buildDir, 'runtime', 'icon-sizes.css');
+          const cssFilePath = resolve(nuxt.options.buildDir, 'runtime', 'compose-sizes.css');
           // const cssFilePathCompose = resolve(nuxt.options.buildDir, 'runtime', 'compose-icon.css');
 
           // Ensure the directory exists
