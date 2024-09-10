@@ -67,8 +67,8 @@ export default defineNuxtModule<ModuleOptions>({
 
           const cssContent = generateCssFile(options.iconSizes);
           // Define the path to save the CSS file within the module
-          const cssFilePath = resolve(nuxt.options.buildDir, 'runtime', 'compose-sizes.css');
-          // const cssFilePathCompose = resolve(nuxt.options.buildDir, 'runtime', 'compose-icon.css');
+          const cssFilePath = resolve(nuxt.options.buildDir, 'runtime', 'assets/compose-sizes.css');
+          // const cssFilePathCompose = resolve(nuxt.options.buildDir, 'runtime', 'assets/compose-icon.css');
 
           // Ensure the directory exists
           fs.mkdirSync(path.dirname(cssFilePath), { recursive: true });
@@ -98,7 +98,7 @@ export default defineNuxtModule<ModuleOptions>({
         const generatedFilePath = writeComponentFile(componentName, componentCode);
 
         const component = createComponentFromName({
-          ...options.opts,
+          ...options,
           name: componentName,
           shortPath: generatedFilePath,
           filePath: generatedFilePath,
