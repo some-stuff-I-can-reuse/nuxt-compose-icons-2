@@ -76,16 +76,16 @@ export default defineNuxtModule<ModuleOptions>({
           // Write the CSS content to the file
           fs.writeFileSync(cssFilePath, cssContent, 'utf-8');
 
-          // Push the CSS file into the Nuxt app's CSS array
-          nuxt.options.css.push(cssFilePath);
-          nuxt.options.css.push(resolve('./runtime/assets/compose-icon.css'));
-          console.log('xd', resolve('./runtime/assets/compose-icon.css'));
           nuxt.options.alias = {
             '@/types': resolve('./types'),
           };
           nuxt.hook('components:extend', (components) => {
             components.push(component);
           });
+          // Push the CSS file into the Nuxt app's CSS array
+          nuxt.options.css.push(cssFilePath);
+          nuxt.options.css.push(resolve('./runtime/assets/compose-icon.css'));
+          console.log('xd', resolve('./runtime/assets/compose-icon.css'));
         });
       } else {
         console.error(`Folder does not exist: ${absolutePathToIcons}`);
