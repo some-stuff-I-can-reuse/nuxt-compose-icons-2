@@ -1,7 +1,7 @@
 
     :root {
-      --icon-size-size-s: 2rem;
-      --icon-size-size-m: 4rem;
-      --icon-size-size-l: 6rem;
-      --icon-size-size-xl: 8rem;
+      --icon-size-s: 2rem;
+      --icon-size-m: 3rem;
+      --icon-size-l: 4rem;
+      --icon-size-xl: 6rem;
     }

@@ -63,11 +63,15 @@ export default defineNuxtModule<ModuleOptions>({
             shortPath: generatedFilePath,
             filePath: generatedFilePath,
           });
-          console.log('📟 - file: module.ts:75 - component → ', component);
+
+          nuxt.hook('components:extend', (components) => {
+            components.push(component);
+          });
 
           const cssContent = generateCssFile(options.iconSizes);
           // Define the path to save the CSS file within the module
-          const cssFilePath = resolve(nuxt.options.buildDir, 'runtime', 'assets/compose-sizes.css');
+          // const cssFilePath = resolve(nuxt.options.buildDir, 'runtime', 'assets/compose-sizes.css');
+          const cssFilePath = path.resolve(__dirname, './runtime/assets/compose-sizes.css');
           // const cssFilePathCompose = resolve(nuxt.options.buildDir, 'runtime', 'assets/compose-icon.css');
 
           // Ensure the directory exists
@@ -79,13 +83,10 @@ export default defineNuxtModule<ModuleOptions>({
           nuxt.options.alias = {
             '@/types': resolve('./types'),
           };
-          nuxt.hook('components:extend', (components) => {
-            components.push(component);
-          });
+
           // Push the CSS file into the Nuxt app's CSS array
           nuxt.options.css.push(cssFilePath);
           // nuxt.options.css.push(resolve('./runtime/assets/compose-icon.css'));
-          console.log('xd', resolve('./runtime/assets/compose-icon.css'));
         });
       } else {
         console.error(`Folder does not exist: ${absolutePathToIcons}`);
