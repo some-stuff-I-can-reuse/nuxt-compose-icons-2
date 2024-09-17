@@ -1,5 +1,5 @@
 // import PrismTreeview from 'node_modules/prismjs/plugins/treeview/prism-treeview.min.js';
-import Prism from 'prismjs';
+import { default as loadLanguages, default as Prism } from 'prismjs';
 import '../assets/prism/prism.css';
 import '../assets/prism/treeview/prism-treeview.css';
 
@@ -8,8 +8,8 @@ export default defineNuxtPlugin(() => {
 
   // Prism.manual = true;
 
-  // loadLanguage(['markup', 'css', 'javascript', 'svg', 'bash', 'json', 'typescript']);
-  // Prism.languages = ['markup', 'css', 'javascript', 'svg', 'bash', 'json', 'typescript'];
+  loadLanguages(['markup', 'css', 'javascript', 'svg', 'bash', 'json', 'typescript']);
+  Prism.languages = ['markup', 'css', 'javascript', 'svg', 'bash', 'json', 'typescript'];
 
   Prism.languages.treeview = {
     'treeview-part': {

@@ -6,8 +6,12 @@
       </div>
     </header>
     <Banner />
+
     <!-- <pre data-src="/prismjs-files/load-module.js"></pre> -->
+    <!-- <HighlighCode :code="`<h1>Hello World!</h1>`" /> -->
+
     <ModuleUsage />
+
     <hr style="margin: 3rem 0" />
     <DemoIcons />
   </div>
@@ -35,9 +39,9 @@ onMounted(() => {
   // display: flex;
   align-items: center;
   justify-content: center;
-  height: 8rem;
+  height: 5rem;
   padding: 1.5rem 0;
-  border-bottom: 2px solid #1e293b;
+  border-bottom: 2px solid $slate-600;
 }
 
 .logo-container {

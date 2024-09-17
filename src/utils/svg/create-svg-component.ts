@@ -82,7 +82,6 @@ export function createSvgComponentCode(
         style: styles.value,
         class: iconClasses.value,
       }));
-    console.log('iconAttributes', iconAttributes.value);
 
         return () => h('svg', iconAttributes.value, recreateVNodes(vnodeChildren));
       },

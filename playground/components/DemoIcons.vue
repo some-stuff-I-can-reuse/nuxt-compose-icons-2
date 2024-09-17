@@ -1,182 +1,182 @@
 <template>
   <div class="demo-icons">
-    <AcademyPreviewIcon size="xl" color="#C2C3D8" />
+    <AcademyPreviewIcon size="m" color="#C2C3D8" />
     <AccountingIcon size="s" color="#6F53DB" />
     <AddCalendarIcon size="m" color="#9394AF" />
-    <AddFilterIcon size="xl" color="#6D6E8F" />
+    <AddFilterIcon size="m" color="#6D6E8F" />
     <AddMailIcon size="m" color="#36365F" />
-    <AddPeopleIcon size="xl" color="#C2C3D8" />
-    <AddIcon size="xl" color="#6F53DB" />
-    <AiIcon size="xl" color="#9394AF" />
-    <AlarmBellIcon size="xl" color="#6D6E8F" />
-    <AnalyticsAltIcon size="xl" color="#36365F" />
-    <AnalyticsPiechartIcon size="xl" color="#C2C3D8" />
+    <AddPeopleIcon size="m" color="#C2C3D8" />
+    <AddIcon size="m" color="#6F53DB" />
+    <AiIcon size="m" color="#9394AF" />
+    <AlarmBellIcon size="m" color="#6D6E8F" />
+    <AnalyticsAltIcon size="m" color="#36365F" />
+    <AnalyticsPiechartIcon size="m" color="#C2C3D8" />
     <AnalyticsIcon size="s" color="#6F53DB" />
-    <AntiqueIcon size="xl" color="#9394AF" />
-    <AppWindowRefreshIcon size="xl" color="#6D6E8F" />
-    <ArchiveIcon size="xl" color="#36365F" />
-    <ArrowDownIcon size="xl" color="#C2C3D8" />
-    <ArrowLeftLineIcon size="xl" color="#6F53DB" />
-    <ArrowLeftIcon size="xl" color="#9394AF" />
-    <ArrowReturnIcon size="xl" color="#6D6E8F" />
-    <ArrowRight1Icon size="xl" color="#36365F" />
-    <ArrowRightIcon size="xl" color="#C2C3D8" />
-    <ArrowUpIcon size="xl" color="#6F53DB" />
-    <AttachmentIcon size="xl" color="#9394AF" />
-    <AudioVerticalIcon size="xl" color="#6D6E8F" />
-    <AvatarUserIcon size="xl" color="#36365F" />
-    <AverageIcon size="xl" color="#C2C3D8" />
+    <AntiqueIcon size="m" color="#9394AF" />
+    <AppWindowRefreshIcon size="m" color="#6D6E8F" />
+    <ArchiveIcon size="m" color="#36365F" />
+    <ArrowDownIcon size="m" color="#C2C3D8" />
+    <ArrowLeftLineIcon size="m" color="#6F53DB" />
+    <ArrowLeftIcon size="m" color="#9394AF" />
+    <ArrowReturnIcon size="m" color="#6D6E8F" />
+    <ArrowRight1Icon size="m" color="#36365F" />
+    <ArrowRightIcon size="m" color="#C2C3D8" />
+    <ArrowUpIcon size="m" color="#6F53DB" />
+    <AttachmentIcon size="m" color="#9394AF" />
+    <AudioVerticalIcon size="m" color="#6D6E8F" />
+    <AvatarUserIcon size="m" color="#36365F" />
+    <AverageIcon size="m" color="#C2C3D8" />
     <AxeIcon size="m" color="#6F53DB" />
     <BugIcon size="m" color="#9394AF" />
-    <BulbIcon size="xl" color="#6D6E8F" />
-    <CalendarClockIcon size="xl" color="#36365F" />
-    <CalendarSeriesIcon size="xl" color="#C2C3D8" />
-    <CalendarIcon size="xl" color="#6F53DB" />
+    <BulbIcon size="m" color="#6D6E8F" />
+    <CalendarClockIcon size="m" color="#36365F" />
+    <CalendarSeriesIcon size="m" color="#C2C3D8" />
+    <CalendarIcon size="m" color="#6F53DB" />
     <CardPaymentIcon size="l" color="#9394AF" />
-    <CategoryIcon size="xl" color="#6D6E8F" />
+    <CategoryIcon size="m" color="#6D6E8F" />
     <CertificateIcon size="l" color="#36365F" />
-    <CheckBoxIcon size="xl" color="#C2C3D8" />
-    <CheckIcon size="xl" color="#6F53DB" />
+    <CheckBoxIcon size="m" color="#C2C3D8" />
+    <CheckIcon size="m" color="#6F53DB" />
     <CircleAddIcon size="l" color="#9394AF" />
-    <CircleCheckIcon size="xl" color="#6D6E8F" />
+    <CircleCheckIcon size="m" color="#6D6E8F" />
     <CircleXIcon size="l" color="#36365F" />
-    <ClearStylesIcon size="xl" color="#C2C3D8" />
-    <CloseIcon size="xl" color="#6F53DB" />
+    <ClearStylesIcon size="m" color="#C2C3D8" />
+    <CloseIcon size="m" color="#6F53DB" />
     <CloudDownloadIcon size="m" color="#9394AF" />
     <CloudSyncIcon size="m" color="#6D6E8F" />
     <CompletedIcon size="m" color="#36365F" />
-    <ComplianceIcon size="xl" color="#C2C3D8" />
-    <CopyPasteIcon size="xl" color="#6F53DB" />
-    <CopyPasteIcon size="xl" color="#9394AF" />
-    <CourseCategoryIcon size="xl" color="#6D6E8F" />
+    <ComplianceIcon size="m" color="#C2C3D8" />
+    <CopyPasteIcon size="m" color="#6F53DB" />
+    <CopyPasteIcon size="m" color="#9394AF" />
+    <CourseCategoryIcon size="m" color="#6D6E8F" />
     <CoursesIcon size="s" color="#36365F" />
-    <CreateIcon size="xl" color="#C2C3D8" />
-    <CsvIcon size="xl" color="#6F53DB" />
-    <DashboardIcon size="xl" color="#9394AF" />
-    <DeleteIcon size="xl" color="#6D6E8F" />
-    <DiscoveryIcon size="xl" color="#36365F" />
-    <DocumentHorizontalIcon size="xl" color="#C2C3D8" />
-    <DocumentVerticalIcon size="xl" color="#6F53DB" />
-    <DownloadIcon size="xl" color="#9394AF" />
-    <DraftIcon size="xl" color="#6D6E8F" />
-    <DragDropIcon size="xl" color="#36365F" />
-    <DuplicateIcon size="xl" color="#C2C3D8" />
-    <ECommerceAltIcon size="xl" color="#6F53DB" />
-    <ECommerceIcon size="xl" color="#9394AF" />
-    <ELearningMonitorIcon size="xl" color="#6D6E8F" />
-    <EditIcon size="xl" color="#36365F" />
+    <CreateIcon size="m" color="#C2C3D8" />
+    <CsvIcon size="m" color="#6F53DB" />
+    <DashboardIcon size="m" color="#9394AF" />
+    <DeleteIcon size="m" color="#6D6E8F" />
+    <DiscoveryIcon size="m" color="#36365F" />
+    <DocumentHorizontalIcon size="m" color="#C2C3D8" />
+    <DocumentVerticalIcon size="m" color="#6F53DB" />
+    <DownloadIcon size="m" color="#9394AF" />
+    <DraftIcon size="m" color="#6D6E8F" />
+    <DragDropIcon size="m" color="#36365F" />
+    <DuplicateIcon size="m" color="#C2C3D8" />
+    <ECommerceAltIcon size="m" color="#6F53DB" />
+    <ECommerceIcon size="m" color="#9394AF" />
+    <ELearningMonitorIcon size="m" color="#6D6E8F" />
+    <EditIcon size="m" color="#36365F" />
     <EditorAlignCenterIcon size="xl" color="#C2C3D8" />
-    <EditorAlignLeftIcon size="xl" color="#6F53DB" />
-    <EditorAlignRightIcon size="xl" color="#9394AF" />
-    <EditorArrowDownIcon size="xl" color="#6D6E8F" />
-    <EditorArrowLeftIcon size="xl" color="#36365F" />
-    <EditorArrowRightIcon size="xl" color="#C2C3D8" />
-    <EditorArrowUpIcon size="xl" color="#6F53DB" />
-    <EditorBoldIcon size="xl" color="#9394AF" />
-    <EditorBulletListIcon size="xl" color="#6D6E8F" />
+    <EditorAlignLeftIcon size="m" color="#6F53DB" />
+    <EditorAlignRightIcon size="m" color="#9394AF" />
+    <EditorArrowDownIcon size="m" color="#6D6E8F" />
+    <EditorArrowLeftIcon size="m" color="#36365F" />
+    <EditorArrowRightIcon size="m" color="#C2C3D8" />
+    <EditorArrowUpIcon size="m" color="#6F53DB" />
+    <EditorBoldIcon size="m" color="#9394AF" />
+    <EditorBulletListIcon size="m" color="#6D6E8F" />
     <EditorCheckIcon size="m" color="#36365F" />
-    <EditorDeleteIcon size="xl" color="#C2C3D8" />
-    <EditorFontSizeIcon size="xl" color="#6F53DB" />
-    <EditorFormulaIcon size="xl" color="#9394AF" />
-    <EditorImageIcon size="xl" color="#6D6E8F" />
-    <EditorItalicIcon size="xl" color="#36365F" />
+    <EditorDeleteIcon size="m" color="#C2C3D8" />
+    <EditorFontSizeIcon size="m" color="#6F53DB" />
+    <EditorFormulaIcon size="m" color="#9394AF" />
+    <EditorImageIcon size="m" color="#6D6E8F" />
+    <EditorItalicIcon size="m" color="#36365F" />
     <EditorLinkIcon size="xl" color="#C2C3D8" />
-    <EditorNumberedListIcon size="xl" color="#6F53DB" />
-    <EditorQuoteIcon size="xl" color="#9394AF" />
-    <EditorRedoIcon size="xl" color="#6D6E8F" />
-    <EditorSubscriptIcon size="xl" color="#36365F" />
-    <EditorSuperscriptIcon size="xl" color="#C2C3D8" />
-    <EditorTextUnderlineIcon size="xl" color="#6F53DB" />
-    <EditorUndoIcon size="xl" color="#9394AF" />
+    <EditorNumberedListIcon size="m" color="#6F53DB" />
+    <EditorQuoteIcon size="m" color="#9394AF" />
+    <EditorRedoIcon size="m" color="#6D6E8F" />
+    <EditorSubscriptIcon size="m" color="#36365F" />
+    <EditorSuperscriptIcon size="m" color="#C2C3D8" />
+    <EditorTextUnderlineIcon size="m" color="#6F53DB" />
+    <EditorUndoIcon size="m" color="#9394AF" />
     <EditorUnlinkIcon size="xl" color="#6D6E8F" />
-    <EnterIcon size="xl" color="#36365F" />
+    <EnterIcon size="m" color="#36365F" />
     <ExpireWarningIcon size="l" color="#C2C3D8" />
-    <ExportIcon size="xl" color="#6F53DB" />
-    <ExternalLinkIcon size="xl" color="#9394AF" />
-    <FolderIcon size="xl" color="#6D6E8F" />
+    <ExportIcon size="m" color="#6F53DB" />
+    <ExternalLinkIcon size="m" color="#9394AF" />
+    <FolderIcon size="m" color="#6D6E8F" />
     <GrieferIcon size="l" color="#36365F" />
-    <GroupIcon size="xl" color="#C2C3D8" />
+    <GroupIcon size="m" color="#C2C3D8" />
     <HelpIcon size="l" color="#6F53DB" />
-    <HideIcon size="xl" color="#9394AF" />
-    <HtmlIcon size="xl" color="#6D6E8F" />
-    <ImageHorizontalIcon size="xl" color="#36365F" />
-    <ImageVerticalIcon size="xl" color="#C2C3D8" />
-    <InfoIcon size="xl" color="#6F53DB" />
-    <InvitationSentIcon size="xl" color="#9394AF" />
+    <HideIcon size="m" color="#9394AF" />
+    <HtmlIcon size="m" color="#6D6E8F" />
+    <ImageHorizontalIcon size="m" color="#36365F" />
+    <ImageVerticalIcon size="m" color="#C2C3D8" />
+    <InfoIcon size="m" color="#6F53DB" />
+    <InvitationSentIcon size="m" color="#9394AF" />
     <InvoiceIcon size="xl" color="#6D6E8F" />
     <KeyboardEnterIcon size="s" color="#36365F" />
-    <LayoutArrangeIcon size="xl" color="#C2C3D8" />
-    <LayoutListIcon size="xl" color="#6F53DB" />
+    <LayoutArrangeIcon size="m" color="#C2C3D8" />
+    <LayoutListIcon size="m" color="#6F53DB" />
     <LayoutModuleIcon size="s" color="#9394AF" />
-    <LicenceIcon size="xl" color="#6D6E8F" />
-    <LinkDiagonalIcon size="xl" color="#36365F" />
-    <LinkHorizontalIcon size="xl" color="#C2C3D8" />
-    <LiveCourseIcon size="xl" color="#6F53DB" />
-    <LiveTrainingIcon size="xl" color="#9394AF" />
-    <LoadingIcon size="xl" color="#6D6E8F" />
-    <LocationPinIcon size="xl" color="#36365F" />
-    <LockCourseIcon size="xl" color="#C2C3D8" />
-    <LogoutIcon size="xl" color="#6F53DB" />
-    <LongArrowDownIcon size="xl" color="#9394AF" />
-    <LongArrowUpIcon size="xl" color="#6D6E8F" />
+    <LicenceIcon size="m" color="#6D6E8F" />
+    <LinkDiagonalIcon size="m" color="#36365F" />
+    <LinkHorizontalIcon size="m" color="#C2C3D8" />
+    <LiveCourseIcon size="m" color="#6F53DB" />
+    <LiveTrainingIcon size="m" color="#9394AF" />
+    <LoadingIcon size="m" color="#6D6E8F" />
+    <LocationPinIcon size="m" color="#36365F" />
+    <LockCourseIcon size="m" color="#C2C3D8" />
+    <LogoutIcon size="m" color="#6F53DB" />
+    <LongArrowDownIcon size="m" color="#9394AF" />
+    <LongArrowUpIcon size="m" color="#6D6E8F" />
     <MailRemoveIcon size="xl" color="#36365F" />
     <MailSentIcon size="xl" color="#C2C3D8" />
-    <MailIcon size="xl" color="#6F53DB" />
-    <MailingsIcon size="xl" color="#9394AF" />
-    <MemberIcon size="xl" color="#6D6E8F" />
+    <MailIcon size="m" color="#6F53DB" />
+    <MailingsIcon size="m" color="#9394AF" />
+    <MemberIcon size="m" color="#6D6E8F" />
     <MenuIcon size="xl" color="#36365F" />
-    <MinusIcon size="xl" color="#C2C3D8" />
-    <MoneyIcon size="xl" color="#6F53DB" />
+    <MinusIcon size="m" color="#C2C3D8" />
+    <MoneyIcon size="m" color="#6F53DB" />
     <MoveAltIcon size="xl" color="#9394AF" />
-    <MovieFileIcon size="xl" color="#6D6E8F" />
-    <NotesFlipIcon size="xl" color="#36365F" />
-    <NotesIcon size="xl" color="#C2C3D8" />
+    <MovieFileIcon size="m" color="#6D6E8F" />
+    <NotesFlipIcon size="m" color="#36365F" />
+    <NotesIcon size="m" color="#C2C3D8" />
     <OptionsIcon size="s" color="#6F53DB" />
-    <PdfIcon size="xl" color="#9394AF" />
-    <PeopleIcon size="xl" color="#6D6E8F" />
-    <PercentageIcon size="xl" color="#36365F" />
-    <PerformanceIcon size="xl" color="#C2C3D8" />
-    <PictureSunIcon size="xl" color="#6F53DB" />
-    <PlusIcon size="xl" color="#9394AF" />
-    <PresentationIcon size="xl" color="#6D6E8F" />
-    <QuizAltIcon size="xl" color="#36365F" />
-    <QuizIcon size="xl" color="#C2C3D8" />
-    <RecurringIcon size="xl" color="#6F53DB" />
-    <RefreshIcon size="xl" color="#9394AF" />
-    <RemoveColorIcon size="xl" color="#6D6E8F" />
-    <RocketIcon size="xl" color="#36365F" />
-    <RoundArrowIcon size="xl" color="#C2C3D8" />
-    <ScormIcon size="xl" color="#6F53DB" />
-    <SearchIcon size="xl" color="#9394AF" />
-    <SendIcon size="xl" color="#6D6E8F" />
-    <SendingMailIcon size="xl" color="#36365F" />
-    <SettingsAltIcon size="xl" color="#C2C3D8" />
-    <SettingsIcon size="xl" color="#6F53DB" />
-    <ShareIcon size="xl" color="#9394AF" />
-    <ShoppingcartCheckIcon size="xl" color="#6D6E8F" />
-    <SmileyIcon size="xl" color="#36365F" />
+    <PdfIcon size="m" color="#9394AF" />
+    <PeopleIcon size="m" color="#6D6E8F" />
+    <PercentageIcon size="m" color="#36365F" />
+    <PerformanceIcon size="m" color="#C2C3D8" />
+    <PictureSunIcon size="m" color="#6F53DB" />
+    <PlusIcon size="m" color="#9394AF" />
+    <PresentationIcon size="m" color="#6D6E8F" />
+    <QuizAltIcon size="m" color="#36365F" />
+    <QuizIcon size="m" color="#C2C3D8" />
+    <RecurringIcon size="m" color="#6F53DB" />
+    <RefreshIcon size="m" color="#9394AF" />
+    <RemoveColorIcon size="m" color="#6D6E8F" />
+    <RocketIcon size="m" color="#36365F" />
+    <RoundArrowIcon size="m" color="#C2C3D8" />
+    <ScormIcon size="m" color="#6F53DB" />
+    <SearchIcon size="m" color="#9394AF" />
+    <SendIcon size="m" color="#6D6E8F" />
+    <SendingMailIcon size="m" color="#36365F" />
+    <SettingsAltIcon size="m" color="#C2C3D8" />
+    <SettingsIcon size="m" color="#6F53DB" />
+    <ShareIcon size="m" color="#9394AF" />
+    <ShoppingcartCheckIcon size="m" color="#6D6E8F" />
+    <SmileyIcon size="m" color="#36365F" />
     <SsoIcon size="s" color="#C2C3D8" />
-    <StarIcon size="xl" color="#6F53DB" />
+    <StarIcon size="m" color="#6F53DB" />
     <StyleIcon size="l" color="#9394AF" />
-    <SuccessIcon size="xl" color="#6D6E8F" />
-    <SwitchAccountIcon size="xl" color="#36365F" />
-    <SynchroIcon size="xl" color="#C2C3D8" />
-    <TagIcon size="xl" color="#6F53DB" />
-    <TenantIcon size="xl" color="#9394AF" />
-    <TextformatIcon size="xl" color="#6D6E8F" />
-    <TimeIcon size="xl" color="#36365F" />
-    <TwoArrowsLeftIcon size="xl" color="#C2C3D8" />
+    <SuccessIcon size="m" color="#6D6E8F" />
+    <SwitchAccountIcon size="m" color="#36365F" />
+    <SynchroIcon size="m" color="#C2C3D8" />
+    <TagIcon size="m" color="#6F53DB" />
+    <TenantIcon size="m" color="#9394AF" />
+    <TextformatIcon size="m" color="#6D6E8F" />
+    <TimeIcon size="m" color="#36365F" />
+    <TwoArrowsLeftIcon size="m" color="#C2C3D8" />
     <UploadDocIcon size="m" color="#6F53DB" />
-    <UploadIcon size="xl" color="#9394AF" />
+    <UploadIcon size="m" color="#9394AF" />
     <UserIcon size="m" color="#6D6E8F" />
     <VideoVerticalIcon size="m" color="#36365F" />
-    <VideoIcon size="xl" color="#C2C3D8" />
-    <ViewIcon size="xl" color="#6F53DB" />
-    <WaitingIcon size="xl" color="#9394AF" />
-    <WebhookIcon size="xl" color="#6D6E8F" />
-    <WorldIcon size="xl" color="#36365F" />
-    <WwwIcon size="xl" color="#C2C3D8" />
-    <XlsIcon size="xl" color="#6F53DB" />
+    <VideoIcon size="m" color="#C2C3D8" />
+    <ViewIcon size="m" color="#6F53DB" />
+    <WaitingIcon size="m" color="#9394AF" />
+    <WebhookIcon size="m" color="#6D6E8F" />
+    <WorldIcon size="m" color="#36365F" />
+    <WwwIcon size="m" color="#C2C3D8" />
+    <XlsIcon size="m" color="#6F53DB" />
   </div>
 </template>
 

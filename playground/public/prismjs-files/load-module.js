@@ -1,5 +1,6 @@
 modules: [
   [
+    // Add the module to your nuxt config
     '@nuxt-compose-icons',
     {
       // Give a path to your icon files directory

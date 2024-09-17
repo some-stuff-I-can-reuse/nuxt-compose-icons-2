@@ -41,7 +41,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  plugins: [{ src: './plugins/prismjs.ts' }],
+  // plugins: [{ src: './plugins/prismjs.ts' }],
   modules: [
     [
       '../src/module',
@@ -57,7 +57,7 @@ export default defineNuxtConfig({
       },
     ],
   ],
-  css: ['/assets/scss/main.scss'],
+  css: ['/assets/scss/main.scss', '/assets/scss/_variables.scss'],
 
   // vue: {
   //   compilerOptions: {

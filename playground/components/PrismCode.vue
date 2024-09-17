@@ -1,88 +1,57 @@
 <template>
-  <pre v-if="!src" :data-file="fileName">
-    <code :class="getClasses" v-html="renderChildren" />
-  </pre>
-  <pre v-else class="prism-code" :data-file="fileName" :data-src="src"></pre>
-  <!-- <p>{{ html }}</p> -->
+  <div class="prism-code">
+    <pre v-if="!src" :class="getClasses" :data-file="fileName">
+      <code  v-html="highlightedCode" />
+    </pre>
+    <pre v-else :class="getClasses" :data-file="fileName" :data-src="src" />
+  </div>
 </template>
 
 <script setup lang="ts">
-// import Prism from '~/plugins/prism';
 import Prism from 'prismjs';
-// The code snippet you want to highlight, as a string
-// const code = `var data = 1;`;
-// console.log('lang', Prism.languages);
-// Returns a highlighted HTML string
-// const html = Prism.highlight(code, Prism.languages.javascript, 'javascript');
+import 'prismjs/components/prism-javascript'; // Import additional languages as needed
 
-const { $prism } = useNuxtApp();
-// import 'prismjs/themes/prism.min.css';
-const slots = useSlots();
-
-onMounted(() => {
-  console.log('nuxtApp', $prism);
-  console.log('test ?', window?.Prism);
-
-  console.log(
-    'nuxtApp',
-    slots?.default
-      ? slots
-          .default()
-          .map((i) => i.children)
-          .join('')
-      : '',
-  );
-  // window.Prism = window.Prism || {};
-  // window.Prism.manual = true;
-  // $Prism.highlightAll(); // highlight your code on mount
-});
+// Define component props
 interface PrismjsProps {
-  language?: string;
-  fileName?: string;
-  src?: string;
+  language?: string; // Programming language for syntax highlighting
+  code?: string; // Code to highlight
+  fileName?: string; // File name to display as metadata
+  src?: string; // Path to the file containing code to highlight
 }
-
 const props: PrismjsProps = defineProps<PrismjsProps>();
 
+// Ref to hold the highlighted code
+const highlightedCode = ref('');
+
+// Compute CSS classes for the code block
 const getClasses = computed(() => {
-  return ['prism-code-content', `language-${props.language}`];
+  return [`language-${props.language || 'javascript'}, prism-code-pre`];
 });
 
-const renderChildren = computed(() => {
-  if (slots.default) {
-    return slots
-      .default()
-      .map((i) => i.children)
-      .join('');
+// Function to highlight code using PrismJS
+const highlightCode = () => {
+  if (props.code) {
+    highlightedCode.value = Prism.highlight(
+      props.code,
+      Prism.languages[props.language || 'javascript'],
+      props.language || 'javascript',
+    );
+    return true;
   }
-  return '';
+};
+
+onMounted(() => {
+  highlightCode();
 });
-// return () => h('svg', iconAttributes.value, recreateVNodes(vnodeChildren));
+
+// Static templates handling: Load and highlight code from the src file during SSR
+// if (props.src) {
+//   const templatePath = path.join(process.cwd(), props.src); // Use the `src` prop for the file path
+//   if (fs.existsSync(templatePath)) {
+//     const code = fs.readFileSync(templatePath, 'utf-8'); // Load the code from the file
+//     highlightedCode.value = highlightCode(code); // Highlight the loaded code with PrismJS
+//   } else {
+//     console.error(`File not found: ${templatePath}`);
+//   }
+// }
 </script>
-
-<style scoped lang="scss">
-@use '../assets/scss/_variables' as *;
-
-.prism-code {
-  position: relative;
-  background: #0f172a;
-  border-radius: 0;
-  box-shadow: none;
-  border: 2px solid #1e293b;
-  padding-top: 2rem;
-}
-
-.prism-code[class*='language-'],
-.prism-code-content[class*='language-'] {
-  font-size: 12px;
-}
-
-.prism-code[data-file]::before {
-  content: attr(data-file);
-  font-size: 0.85rem;
-  color: $primary;
-  position: absolute;
-  top: 4px;
-  right: 4px;
-}
-</style>

@@ -1,0 +1,20 @@
+// import hljs from 'highlight.js/lib/core';
+// // import html from 'highlight.js/lib/languages/html';
+// import javascript from 'highlight.js/lib/languages/javascript';
+// import hljsDefineVue from 'highlightjs-vue';
+// console.log('📟 - file: highlight.ts:4 - hljsDefineVue → ', hljsDefineVue);
+
+// export default defineNuxtPlugin(() => {
+//   if (!window) return;
+
+//   hljs.registerLanguage('javascript', javascript);
+//   // hljs.registerLanguage('html', html);
+//   hljsDefineVue(hljs);
+//   // hljs.initHighlightingOnLoad();
+
+//   return {
+//     provide: {
+//       hljs,
+//     },
+//   };
+// });

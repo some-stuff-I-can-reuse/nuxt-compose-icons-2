@@ -1,67 +1,73 @@
-@import './_variables.scss';
+@import "./_variables.scss";
 // @import "./libs/prismjs/treeview/prism-treeview.css";
+@import "./prism.scss";
 
 @font-face {
-  font-family: 'CaviarDreams';
-  src: url('/fonts/CaviarDreams.woff2') format('woff2');
+  font-family: "CaviarDreams";
+  src: url("/fonts/CaviarDreams.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'CaviarDreams';
-  src: url('/fonts/CaviarDreams_Bold.woff2') format('woff2');
+  font-family: "CaviarDreams";
+  src: url("/fonts/CaviarDreams_Bold.woff2") format("woff2");
   font-weight: bold;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'CaviarDreams';
-  src: url('/fonts/CaviarDreams_Italic.woff2') format('woff2');
+  font-family: "CaviarDreams";
+  src: url("/fonts/CaviarDreams_Italic.woff2") format("woff2");
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'CaviarDreams';
-  src: url('/fonts/CaviarDreams_BoldItalic.woff2') format('woff2');
+  font-family: "CaviarDreams";
+  src: url("/fonts/CaviarDreams_BoldItalic.woff2") format("woff2");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'gotham-black';
-  src: url('/fonts/GOTHAM-BLACK.OTF') format('opentype');
+  font-family: "gotham-black";
+  src: url("/fonts/GOTHAM-BLACK.OTF") format("opentype");
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'gotham-book';
-  src: url('/fonts/GOTHAM-BOOK.woff') format('woff');
+  font-family: "gotham-book";
+  src: url("/fonts/GOTHAM-BOOK.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'gotham-bold';
-  src: url('/fonts/GOTHAM-BOLD.woff') format('woff');
+  font-family: "gotham-bold";
+  src: url("/fonts/GOTHAM-BOLD.woff") format("woff");
   font-display: swap;
 }
 
 body {
   margin: 0;
-  background-color: rgb(14, 17, 56);
-  font-family: 'gotham-black', sans-serif;
+  background-color: $slate-800;
+  font-family: "gotham-book", sans-serif;
+  // font-family: "CaviarDreams", sans-serif;
   font-weight: 400;
   color: #fff;
 }
 
 /* @link https://utopia.fyi/type/calculator?c=320,16,1.125,1240,16,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
-h1 {
-  font-size: $text-sm;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "gotham-black", sans-serif;
 }
 
-code[class*='language-'],
-pre[class*='language-'] {
-  font-size: 12px;
+.primary {
+  color: $green-400;
 }

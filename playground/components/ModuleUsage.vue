@@ -7,6 +7,7 @@
     <PrismCode language="markup"> @use 'assets/scss/_variables' as *; </PrismCode> -->
       <!-- <pre data-src="/prismjs-files/example.markup"></pre> -->
       <PrismCode file-name="nuxt.config.ts" src="/prismjs-files/load-module.js" />
+
       <PrismCode file-name=".nuxt.component.d.ts" src="/prismjs-files/nuxt.component.js" />
     </div>
   </details>
@@ -24,12 +25,17 @@ const iconDirectory = computed(() => {
 });
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .module-usage {
   display: flex;
   gap: 1rem;
+
+  :deep .prism-code:last-child {
+    flex: 1;
+  }
 }
 .config-usage {
+  margin-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: bold;
 }
