@@ -1,5 +1,4 @@
 // Manually write the generated component in the runtime directory of the module, to inject it into the Nuxt app
-
 import * as fs from 'node:fs';
 import path from 'node:path';
 

@@ -27,8 +27,8 @@ const defaultSizes: ComposeIconSize = {
  * and since it's a CSS variable, it will automatically update the class applied to the icon
  * at runtime without involving too much JavaScript
  */
-export function generateCssFile(ComposeIconSize?: ComposeIconSize) {
-  const sizes = { ...defaultSizes, ...ComposeIconSize };
+export function generateCssFile(iconSizes?: ComposeIconSize) {
+  const sizes = { ...defaultSizes, ...iconSizes };
 
   const cssContent = `:root {
   --icon-size-${IconSize.s}: ${sizes[IconSize.s]};
