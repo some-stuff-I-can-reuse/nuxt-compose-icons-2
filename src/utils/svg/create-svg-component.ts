@@ -22,9 +22,6 @@ export function createSvgComponentCode(
 ): string {
   const { attributes, children: svgNodeChildren } = parseSvg(svgContent);
   const vnodeChildren = svgNodeChildren.map(convertNodeToVNode);
-  console.log('🖇️ ~ svgNodeChildren → ', svgNodeChildren);
-  console.log('🖇️ ~ vnodeChildren → ', vnodeChildren);
-  console.log('nuxt3Side', attributes);
 
   return `
     <script lang="ts">
