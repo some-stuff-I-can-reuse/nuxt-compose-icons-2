@@ -17,8 +17,6 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
-
 <style>
 .wrapper {
   max-width: 1600px;
