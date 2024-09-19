@@ -15,7 +15,7 @@ import { generateCssFile } from './utils/styles/generate-css-file';
 export interface ModuleOptions {
   pathToIcons?: string;
   iconComponentList?: { [key: string]: Component };
-  ComposeIconSize?: ComposeIconSize;
+  iconSize?: ComposeIconSize;
   generatedComponentOptions?: ComponentsOptions;
 }
 
@@ -85,7 +85,7 @@ export default defineNuxtModule<ModuleOptions>({
           });
 
           // 6. Generate a CSS file with the icon sizes and add it to the Nuxt app's CSS array at build time
-          const cssContent = generateCssFile(options.ComposeIconSize);
+          const cssContent = generateCssFile(options.iconSize);
           // Define the path to save the CSS file within the module
           const cssFilePath = path.resolve(__dirname, './runtime/assets/compose-sizes.css');
           // Ensure the directory exists

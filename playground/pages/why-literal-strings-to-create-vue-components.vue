@@ -19,7 +19,7 @@
 
 <style>
 .wrapper {
-  max-width: 1600px;
+  max-width: 1780px;
 }
 </style>
 
@@ -31,7 +31,7 @@
   // align-items: center;
   justify-content: center;
   min-height: 100svh;
-  padding: 2rem;
+  padding: 1.5rem;
 
   .why_are_you_looking_at_the_code_of_this_stupid_page {
     max-height: 100%;
