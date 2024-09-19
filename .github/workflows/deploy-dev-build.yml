@@ -18,8 +18,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # - name: Prepare playground
-      #   run: npm run dev:prepare
+      - name: Prepare playground
+        run: npm run dev:prepare
 
       - name: Install dependencies in playground and generate static files
         run: |
