@@ -1,3 +1,9 @@
+/*
+ * Utility function to read all files in a directory recursively
+ * if the .svg are separated in different folders
+ * such as: /icons/outline or /icons/solid for example
+ */
+
 import * as fs from 'node:fs';
 import path from 'node:path';
 

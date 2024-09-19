@@ -8,7 +8,7 @@ modules: [
       //  or
       iconComponentList: iconComponentList,
       // pass your desired icon sizes depending on your design system
-      iconSizes: {
+      IconSizes: {
         s: '2rem',
         m: '3rem',
         l: '4rem',

@@ -6,10 +6,10 @@ export enum IconSize {
   xl = 'xl',
 }
 
-export type ComposeIconSizes = keyof typeof IconSize;
+export type IconSizeKey = keyof typeof IconSize;
 
-// Define the interface for size values
-export interface IconSizes {
+// This define the interface for size real values
+export interface ComposeIconSize {
   [IconSize.s]?: string;
   [IconSize.m]?: string;
   [IconSize.l]?: string;
